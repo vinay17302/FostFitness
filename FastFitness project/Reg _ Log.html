@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login & Signup pages</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" style=" background: rgba(0,0,0,0.7)">
+  <div class="container">
+    <a class="navbar-brand text-light" href="index.html" data-aos="fade-right"><span class="text-primary"><b> F</b></span>ast<span class="text-success"><b>F</b></span>itness<img src="images/vv3.jpg" height="30px" width="40px" class="rounded-circle"></a>
+    <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"  data-aos="fade-left" data-aos-delay="100">
+          <a class="nav-link text-light" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        </li>
+        <li class="nav-item" data-aos="fade-left" data-aos-delay="200">
+          <a class="nav-link text-light" href="Workouts.html"><i class="fas fa-watch-fitness"></i> Workouts</a>
+
+        </li>
+        <li class="nav-item" data-aos="fade-left" data-aos-delay="300">
+          <a class="nav-link text-light" href="Nutrition.html"><i class="fa fa-cutlery" aria-hidden="true"></i>Nutrition</a>       
+        </li>
+         <li class="nav-item" data-aos="fade-left" data-aos-delay="400">
+                  <a class="nav-link text-light" href="Schedule.html">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Schedule
+                  </a>
+        </li>
+        <li class="nav-item" data-aos="fade-left" data-aos-delay="500">
+          <a class="nav-link text-light" href="Aboutus.html"><i class="fa fa-users" aria-hidden="true"></i>Aboutus</a>
+        </li>
+         <li class="nav-item" data-aos="fade-left" data-aos-delay="600">
+          <a class="nav-link text-light" href="Contactus.html"><i class="fa fa-address-card" aria-hidden="true"></i>Contactus</a>
+        </li>
+          <li class="nav-item" data-aos="fade-left" data-aos-delay="700">
+          <a class="nav-link text-light" href="Reg & Log.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Reg & Log</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Registration page-->
+<div id="Reg.html">
+ <div class="container-fluid mt-5" style="background-image:url(images/03.jpg);">
+  <div class="row mt-5 ml-5">
+    <div class="col-md-6">
+<form method="post" action="Default.aspx" id="form1" class="mt-5">
+            <div style="max-width: 400px;">
+                <h2 class="form-signin-heading text-warning" style="font-size:40px;text-shadow: 2px 1px;"><u>Registration:</u></h2>
+                <label for="txtUsername" class="text-primary">Username</label>
+                <input name="txtUsername" type="text" id="txtUsername" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Enter Username" required>
+                <br>
+                <label for="txtEmail" class="text-primary">Email</label>
+                <input name="txtEmail" id="txtEmail" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Enter Email"required type="email">
+                <br>
+                <label for="txtPassword"  class="text-primary">Password</label>
+                <input name="txtPassword" type="password" id="txtPassword" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"
+                    class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <br>
+                <label for="txtConfirmPassword" class="text-primary">Confirm Password</label>
+                <input name="txtConfirmPassword" type="password" id="txtConfirmPassword" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Confirm Password">
+                <hr>
+                <input type="submit" name="btnSignup" value="Sign up" id="btnSignup" class="btn btn-primary rounded-pill shadow-sm">
+            </div>
+</form>
+</div>
+
+<!--login-->
+
+        <div class="col-md-4 mt-5">
+          <form>
+              <h2 class="form-signin-heading text-warning" style="font-size:40px;text-shadow: 2px 1px;"><u>Login:</u></h2>
+                <div class="form-group mb-3">
+                  <label for="txtEmail" class="text-primary">Email</label>
+                  <input id="inputEmail" type="email" placeholder="Email address" required="" autofocus="" class="form-control rounded-pill border-0 shadow-sm px-4">
+                </div>
+                <div class="form-group mb-3">
+                  <label for="txtPassword"class="text-primary">Password</label>
+                  <input id="inputPassword" type="password" title="Password must contain: Minimum 8 characters atleast 1 Alphabet and 1 Number"class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Enter Password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                  <label for="customCheck1" class="custom-control-label text-primary">Remember password</label>
+                </div>
+                  <button type="submit" class="btn btn-primary rounded-pill shadow-sm">Login</button>
+          </form>   
+        </div> 
+                  
+   </div> 
+</div>
+
+
+<!--footer-->
+
+<footer class="footer py-4" style=" background: rgba(0,0,0,0.9)">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card bg-info">
+                <div class="card-body">
+
+      <a class="navbar-brand text-light" href="index.html" data-aos="fade-right"><span class="text-primary"><b>F</b></span>ast<span class="text-success"><b>F</b></span>itness<img src="images/vv3.jpg" height="30px" width="40px" class="rounded-circle"></a>
+       <p class="card-text">Call: +91 917745****</p>
+       <p class="card-text">Email: mvinaykumar08@gmail.com</p>
+       <p class="card-text"><h6><i class="fa fa-address-card-o" aria-hidden="true"></i><u>ADDRESS:</u></h6>GRR Complex, SR Nagar,HYD-500038</p>
+       <p class="card-text">Telangana-TS,INDIA-IN</p>
+       <p>
+       <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>  <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></i></a>  <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+       </p></div></div>
+</div>
+<div class="col-md-3">
+    <div class="card bg-info">
+  <div class="card-body">
+    <h4 class="card-title"><u>INFOTMATION:</u></h4>
+    <p class="card-text">Workouts</p>
+     <p class="card-text">Nutrition</p>
+      <p class="card-text">Schedule</p>
+       <p class="card-text">Aboutus</p>
+        <p class="card-text">Contactus</p>
+         <p class="card-text">FastFitness</p>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+    <div class="card bg-info">
+  <div class="card-body">
+    <h4 class="card-title"><u>OUTLINKS:</u></h4>
+       <a href="https://nirmaan.org"  class="text-light">Nirmaan</a></p>
+       <p> <a href="https://techmahindrafoundation.org" class="text-light">TechMahindhra</a></p>
+        <p><a href="index.html" class="text-light">FastFitness</a></p>
+       <p> <a href="https://www.facebook.com/nirmaantmf/"class="text-light">FB</a></p>
+  </div>
+</div>
+</div>
+      </div>
+    
+    <p class="text-white">Developed by #197264 Powered by <span class="text-warning">Vinay</span>&copy;@NIRMAAN</p>   
+</div>
+</div>
+
+    </body>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+        var txtPassword = document.getElementById("txtPassword");
+        var txtConfirmPassword = document.getElementById("txtConfirmPassword");
+        txtPassword.onchange = ConfirmPassword;
+        txtConfirmPassword.onkeyup = ConfirmPassword;
+        function ConfirmPassword() {
+            txtConfirmPassword.setCustomValidity("");
+            if (txtPassword.value != txtConfirmPassword.value) {
+                txtConfirmPassword.setCustomValidity("Passwords do not match.");
+            }
+        }
+    }
+</script>
+    </html>	
+

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nutrition page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/moving-letters.css"> 
+  <style type="text/css">
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.base {
+  width: 500px;
+  border-top: 5px solid gray;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  padding: 0 0 30px;
+}
+
+.holder {
+  width: 30px;
+  height: 20px;
+  background: black;
+  margin: auto;
+  border-radius: 0 0 50% 50%;
+}
+
+.thread {
+  display: inline-block;
+  width: 2px;
+  height: 200px;
+  background: black;
+  border-radius: 5px;
+  position: relative;
+  transform-origin: 50% 0;
+  animation: moveIt 2.5s ease-in-out infinite;
+}
+
+.thread:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: red;
+  border: 2px solid white;
+  top: -4.5px;
+  left: -3.5px;
+}
+
+.knob {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -18px;
+  left: -4.5px;
+  border: 2px solid rgba(255, 255, 255, .5);
+  border-radius: 50%;
+  border-bottom: 2px solid transparent;
+}
+
+.pendulum {
+   width: 160px;
+  background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+  background: radial-gradient(circle at 70% 35%, white, #66d63e 30%, #40a31d 50%);
+    border-radius: 10%;
+    position: absolute;
+    bottom: -40px;
+    left: -77px;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+.shadow {
+  width: 30px;
+  height: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  margin: 50px auto 0;
+  animation: moveShade 1.25s ease-in-out alternate infinite;
+}
+
+@keyframes moveIt {
+  0%, 100% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes moveShade {
+  0% {
+    transform: translateX(-220px) scale(1.4, .5);
+    filter: blur(20px);
+  }
+  50% {
+    filter: blur(3px);
+  }
+  100% {
+    transform: translateX(220px) scale(1.4, .5);
+    filter: blur(20px);
+  }
+}
+
+  </style>
+
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" style=" background: rgba(0,0,0,0.7)">
+  <div class="container">
+    <a class="navbar-brand text-light" href="index.html" data-aos="fade-right"><span class="text-primary"><b> F</b></span>ast<span class="text-success"><b>F</b></span>itness<img src="images/vv3.jpg" height="30px" width="40px" class="rounded-circle"></a>
+    <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"  data-aos="fade-left" data-aos-delay="100">
+          <a class="nav-link text-light" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+        </li>
+        <li class="nav-item" data-aos="fade-left" data-aos-delay="200">
+          <a class="nav-link text-light" href="Workouts.html"><i class="fas fa-watch-fitness"></i> Workouts</a>
+
+        </li>
+        <li class="nav-item" data-aos="fade-left" data-aos-delay="300">
+          <a class="nav-link text-light" href="Nutrition.html"><i class="fa fa-cutlery" aria-hidden="true" ></i>Nutrition</a>       
+        </li>
+         <li class="nav-item" data-aos="fade-left" data-aos-delay="400">
+                  <a class="nav-link text-light" href="Schedule.html">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>Schedule
+                  </a>
+        </li>
+        <li class="nav-item" data-aos="fade-left" data-aos-delay="500">
+          <a class="nav-link text-light" href="Aboutus.html"><i class="fa fa-users" aria-hidden="true"></i>Aboutus</a>
+        </li>
+         <li class="nav-item" data-aos="fade-left" data-aos-delay="600">
+          <a class="nav-link text-light" href="Contactus.html"><i class="fa fa-address-card" aria-hidden="true"></i>Contactus</a>
+        </li>
+          <li class="nav-item" data-aos="fade-left" data-aos-delay="700">
+          <a class="nav-link text-light" href="Reg & Log.html"><i class="fa fa-user-plus" aria-hidden="true"></i>Reg & Log</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="Nutrition.html">
+<div class="container-fluid">
+  <div class="jumbotron mt-5" style="background-image:url(images/ntr3.jfif);">
+    <div class="base" style="margin-top:-36px">
+  <div class="holder"></div>
+  <div class="thread">
+    <div class="knob"></div>
+    <div class="pendulum">BALANCED DIET FOR FITNESS</div>
+  </div>
+  <div class="shadow"></div>
+</div>  
+  <table class="table table-bordered table-hover">
+    <tr class="bg-info">
+      <th><h5>DIET:</h5></th>
+      <th><h5>CALORIES:</h5></th>
+      <th><h5>PROTEINS(g):</h5></th>
+      <th><h5>CARBS(g):</h5></th>
+      <th><h5>FAT(g):</h5></th>
+    </tr>
+    
+    <tr class="bg-secondary">
+      <td><h2 class="text-danger"><u>BREAKFAST</u></h2></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">3 Whole eggs</h6></td>
+      <td><h6 class="text-white">210</h6></td>
+      <td><h6 class="text-white">18</h6></td>
+      <td><h6 class="text-white">3</h6></td>
+      <td><h6 class="text-white">15</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">3 egg whites</h6></td>
+      <td><h6 class="text-white">48</h6></td>
+      <td><h6 class="text-white">11</h6></td>
+      <td><h6 class="text-white">1</h6></td>
+      <td><h6 class="text-white">1</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">1/2 cup oatmeal</h6></td>
+      <td><h6 class="text-white">150</h6></td>
+      <td><h6 class="text-white">5</h6></td>
+      <td><h6 class="text-white">27</h6></td>
+      <td><h6 class="text-white">3</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">1/2 cup skim milk</h6></td>
+      <td><h6 class="text-white">45</h6></td>
+      <td><h6 class="text-white">4</h6></td>
+      <td><h6 class="text-white">6.5</h6></td>
+      <td><h6 class="text-white">0</h6></td>
+    </tr>
+
+
+    <tr class="bg-secondary">
+      <td><h2 class="text-danger"><u>SNACKS</u></h2></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">2 scoops whey protein</h6></td>
+      <td><h6 class="text-white">280</h6></td>
+      <td><h6 class="text-white">50</h6></td>
+      <td><h6 class="text-white">8</h6></td>
+      <td><h6>6</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">2 tbsp peanut butter</h6></td>
+      <td><h6 class="text-white">200</h6></td>
+      <td><h6 class="text-white">7</h6></td>
+      <td><h6 class="text-white">6</h6></td>
+      <td><h6 class="text-white">16</h6></td>
+    </tr>
+    
+    <tr>
+      <td><h6 class="text-white">1/2 cup skim milk</h6></td>
+      <td><h6 class="text-white">45</h6></td>
+      <td><h6 class="text-white">4</h6></td>
+      <td><h6 class="text-white">6.5</h6></td>
+      <td><h6 class="text-white">0</h6></td>
+    </tr>
+    <tr class="bg-secondary">
+      <td><h2 class="text-danger"><u>LUNCH</u></h2></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">6 oz deli turkey slices</h6></td>
+      <td><h6 class="text-white">151</h6></td>
+      <td><h6 class="text-white">27.1</h6></td>
+      <td><h6 class="text-white">9.1</h6></td>
+      <td><h6 class="text-white">1.5</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">2 slices whole-wheat bread</h6></td>
+      <td><h6 class="text-white">100</h6></td>
+      <td><h6 class="text-white">8</h6></td>
+      <td><h6 class="text-white">20</h6></td>
+      <td><h6 class="text-white">2</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">Lettuce,tomato,mustard</h6></td>
+      <td><h6 class="text-white">35</h6></td>
+      <td><h6 class="text-white">1</h6></td>
+      <td><h6 class="text-white">5</h6></td>
+      <td><h6 class="text-white">1</h6></td>
+    </tr>
+    <tr class="bg-secondary">
+      <td><h2 class="text-danger"><u>SNACKS</u></h2></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">1 cup nonfat greek yogurt</h6></td>
+      <td><h6 class="text-white">187</h6></td>
+      <td><h6 class="text-white">18.7</h6></td>
+      <td><h6 class="text-white">26.7</h6></td>
+      <td><h6 class="text-white">0</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">2 oz sliced almonds</h6></td>
+      <td><h6 class="text-white">308</h6></td>
+      <td><h6 class="text-white">12.4</h6></td>
+      <td><h6 class="text-white">12</h6></td>
+      <td><h6 class="text-white">23</h6></td>
+    </tr>
+    
+    <tr class="bg-secondary">
+      <td><h2 class="text-danger"><u>DINNER</u></h2></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">8 oz tilapia</h6></td>
+      <td><h6 class="text-white">186</h6></td>
+      <td><h6 class="text-white">43</h6></td>
+      <td><h6 class="text-white">0</h6></td>
+      <td><h6 class="text-white">2</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">1 cup brown rice</h6></td>
+      <td><h6 class="text-white">150</h6></td>
+      <td><h6 class="text-white">3</h6></td>
+      <td><h6 class="text-white">32</h6></td>
+      <td><h6 class="text-white">1</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">1 cup green beans</h6></td>
+      <td><h6 class="text-white">44</h6></td>
+      <td><h6 class="text-white">2.4</h6></td>
+      <td><h6 class="text-white">9.8</h6></td>
+      <td><h6 class="text-white">0.3</h6></td>
+    </tr>
+    <tr>
+      <td><h6 class="text-white">2 cups mixed green salad</h6></td>
+      <td><h6 class="text-white">107</h6></td>
+      <td><h6 class="text-white">10.7</h6></td>
+      <td><h6 class="text-white">16</h6></td>
+      <td><h6 class="text-white">0</h6></td>
+    </tr>
+  </table>
+</div>
+ </div></div>
+
+
+<!--footer-->
+
+<footer class="footer py-4" style=" background: rgba(0,0,0,0.9)">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="card bg-info">
+                <div class="card-body">
+
+      <a class="navbar-brand text-light" href="index.html" data-aos="fade-right"><span class="text-primary"><b>F</b></span>ast<span class="text-success"><b>F</b></span>itness<img src="images/vv3.jpg" height="30px" width="40px" class="rounded-circle"></a>
+       <p class="card-text">Call: +91 917745****</p>
+       <p class="card-text">Email: mvinaykumar08@gmail.com</p>
+       <p class="card-text"><h6><i class="fa fa-address-card-o" aria-hidden="true"></i><u>ADDRESS:</u></h6>GRR Complex, SR Nagar,HYD-500038</p>
+       <p class="card-text">Telangana-TS,INDIA-IN</p>
+       <p>
+       <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>  <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+       <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></i></a>  <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+       </p></div></div>
+</div>
+<div class="col-md-3">
+    <div class="card bg-info">
+  <div class="card-body">
+    <h4 class="card-title"><u>INFOTMATION:</u></h4>
+    <p class="card-text">Workouts</p>
+     <p class="card-text">Nutrition</p>
+      <p class="card-text">Schedule</p>
+       <p class="card-text">Aboutus</p>
+        <p class="card-text">Contactus</p>
+         <p class="card-text">FastFitness</p>
+  </div>
+</div>
+</div>
+<div class="col-md-4">
+    <div class="card bg-info">
+  <div class="card-body">
+    <h4 class="card-title"><u>OUTLINKS:</u></h4>
+       <a href="https://nirmaan.org"  class="text-light">Nirmaan</a></p>
+       <p> <a href="https://techmahindrafoundation.org" class="text-light">TechMahindhra</a></p>
+        <p><a href="index.html" class="text-light">FastFitness</a></p>
+       <p> <a href="https://www.facebook.com/nirmaantmf/"class="text-light">FB</a></p>
+  </div>
+</div>
+</div>
+      </div>
+    
+    <p class="text-white">Developed by #197264 Powered by <span class="text-warning">Vinay</span>&copy;@NIRMAAN</p>   
+</div>
+</div>
+</footer>
+</div>
+  
+</body>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+   <script src="/js/anime.min.js"></script>
+  
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</html>
